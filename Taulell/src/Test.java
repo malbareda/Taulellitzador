@@ -112,7 +112,8 @@ public class Test {
 
 		System.out.println("cas 5: Exemple d'overdraw");
 		t.setActimgbackground(false);
-		int[][] matriuover = { { 6, 0 }, { 0, 0 }, };
+		int[][][] matriuover = {{ { 0, 1 } },{ { 6, 0 }, { 0, 0 }, }};
+		
 		t.overdibuixa(matriuover);
 
 		sc.nextLine();
