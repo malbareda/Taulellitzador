@@ -158,6 +158,12 @@ public class Taulell extends JPanel {
 		}
 
 	}
+	
+	
+	public void borraOverdraw() {
+		int[][][] borra = {{{0}}};
+		this.overdibuixa(borra);
+	}
 
 	// Aquest mètode inicialitza la matriu per primera vegada creant els
 	// quadrats

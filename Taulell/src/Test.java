@@ -117,6 +117,10 @@ public class Test {
 		t.overdibuixa(matriuover);
 
 		sc.nextLine();
+		
+		t.borraOverdraw();
+		
+		sc.nextLine();
 
 		/// cas 6: Comprovacio mouse i teclat
 		
