@@ -159,19 +159,49 @@ public class Test {
 				"octorok.gif", "octorok.gif", "octorok.gif" };
 		double[] freedrawx = { 1, 1, 1, 1, 1.5, 1, 1, 1, 1, 1 };
 		double[] freedrawy = { 1, 1, 1, 1, 2, 1, 1, 1, 1, 1 };
+		int[][][] matriuover2 = {{ { 0, 1 } },{ { 6, 0 }, { 0, 0 }, }};
 		t.setFreedrawx(freedrawx);
 		t.setFreedrawy(freedrawy);
 		t.setImatges(imatges2);
 		f.setActetiquetes(false);
 		f.setTitle("The Legend of Zelda");
 
-		int[][] matriu5 = { { 2, 2, 2, 2, 2, 2, 2, 2, 2, 2 }, { 0, 0, 0, 0, 0, 0, 0, 4, 0, 0 },
-				{ 0, 0, 0, 3, 3, 0, 0, 0, 0, 0 }, { 0, 1, 0, 3, 3, 0, 4, 0, 0, 0 }, { 0, 0, 0, 0, 6, 0, 0, 0, 0, 0 },
-				{ 2, 2, 2, 2, 2, 2, 2, 2, 2, 2 }, };
-
-		t.dibuixa(matriu5);
+		
+		t.overdibuixa(matriuover2);
 
 		sc.nextLine();
+		
+		
+		/// cas 7.1: Freeoverdraw
+
+				System.out.println("cas 7: Freeoverdraw");
+				f.setActetiquetes(false);
+				f.setEtiquetadebug(false);
+
+				
+				t.setActcolors(false);
+				t.setFons(0xfed8a7);
+				t.setActimatges(true);
+				t.setActlletres(false);
+				t.setActborde(false);
+				t.setActfreedraw(true);
+				String[] imatges3 = { "", "Link1.gif", "rock2.png", "rock1.png", "octorok.gif", "octorok.gif", "octorok.gif",
+						"octorok.gif", "octorok.gif", "octorok.gif" };
+				double[] freedrawx2 = { 1, 1, 1, 1, 1.5, 1, 1, 1, 1, 1 };
+				double[] freedrawy2 = { 1, 1, 1, 1, 2, 1, 1, 1, 1, 1 };
+				t.setFreedrawx(freedrawx2);
+				t.setFreedrawy(freedrawy2);
+				t.setImatges(imatges3);
+				f.setActetiquetes(false);
+				f.setTitle("The Legend of Zelda");
+
+				int[][] matriu6 = { { 2, 2, 2, 2, 2, 2, 2, 2, 2, 2 }, { 0, 0, 0, 0, 0, 0, 0, 4, 0, 0 },
+						{ 0, 0, 0, 3, 3, 0, 0, 0, 0, 0 }, { 0, 1, 0, 3, 3, 0, 4, 0, 0, 0 }, { 0, 0, 0, 0, 6, 0, 0, 0, 0, 0 },
+						{ 2, 2, 2, 2, 2, 2, 2, 2, 2, 2 }, };
+
+				t.dibuixa(matriu6);
+
+				sc.nextLine();
 
 		/// cas 8: Doble finestra
 
